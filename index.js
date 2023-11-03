@@ -20,7 +20,12 @@ window.addEventListener('scroll', function () {
 
 
 
+// --------------------------- skillset ---------------------------
+const skillset_h2 = document.querySelectorAll('.skillset h2');
+skillset_h2.addEventListener('click', function () {
+    skillset_h2.clasList.add = "animate__flipInX"
 
+})
 
 
 
@@ -51,36 +56,36 @@ window.addEventListener('scroll', function () {
 
 
 // --profile
-const audio = document.querySelector('.index-header .profile audio')
-let rotationDegree = 0
-let img = ""
+// const audio = document.querySelector('.index-header .profile audio')
+// let rotationDegree = 0
+// let img = ""
 
-audio.parentElement.addEventListener('click', function () {
-    if (audio.paused) {
-        audio.play()
-        audio.parentElement.style.animation = "rotate 5s linear infinite"
-    } else {
-        audio.pause()
-        rotationDegree = getCurrentRotationDegree()
-        audio.parentElement.style.transform = `rotate(${rotationDegree}deg)`
-        audio.parentElement.style.animation = "none"
-    }
-})
+// audio.parentElement.addEventListener('click', function () {
+//     if (audio.paused) {
+//         audio.play()
+//         audio.parentElement.style.animation = "rotate 5s linear infinite"
+//     } else {
+//         audio.pause()
+//         rotationDegree = getCurrentRotationDegree()
+//         audio.parentElement.style.transform = `rotate(${rotationDegree}deg)`
+//         audio.parentElement.style.animation = "none"
+//     }
+// })
 
-function getCurrentRotationDegree() {
-    const transformValue = window.getComputedStyle(audio.parentElement, null).getPropertyValue('transform')
-    const matrix = transformValue.split('(')[1].split(')')[0].split(',')
-    const a = matrix[0]
-    const b = matrix[1]
-    const angle = Math.round(Math.atan2(b, a) * (180 / Math.PI))
-    return angle
-}
+// function getCurrentRotationDegree() {
+//     const transformValue = window.getComputedStyle(audio.parentElement, null).getPropertyValue('transform')
+//     const matrix = transformValue.split('(')[1].split(')')[0].split(',')
+//     const a = matrix[0]
+//     const b = matrix[1]
+//     const angle = Math.round(Math.atan2(b, a) * (180 / Math.PI))
+//     return angle
+// }
 
-const ad = audio.nextElementSibling
-ad.addEventListener('click', function () {
-    ad.style.display = "none"
+// const ad = audio.nextElementSibling
+// ad.addEventListener('click', function () {
+//     ad.style.display = "none"
 
-})
+// })
 
 
 
@@ -105,4 +110,25 @@ ad.addEventListener('click', function () {
 
 
 
-// ---------------------------  ---------------------------
+// --------------------------- Contact ---------------------------
+let userName = document.getElementById('name').value;
+let phone = document.getElementById('phone').value;
+let email = document.getElementById('email').value;
+
+let messageBody = userName + "</br>" + phone + "</br>" + email;
+
+function emailSend() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "wuxu0319@gmail.com",
+        Password: "659C119C6154EA0374E41A30947EC082EAB9",
+        To: 'onwuxu@gmail.com',
+        From: "wuxu0319@gmail.com",
+        Subject: "subject",
+        Body: messageBody
+    }).then(
+        message => alert(message)
+    );
+}
+
+

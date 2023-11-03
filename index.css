@@ -2,12 +2,14 @@
 * {
     margin: 0 auto;
     padding: 0;
-    font-family: sans-serif;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .section {
-    /* background-scolor: pink; */
-    /* min-height: 600px; */
     min-height: 600px;
     width: 100%;
     margin: 100px auto;
@@ -31,7 +33,7 @@ h2 {
     font-size: 36px;
     text-align: center;
     margin-bottom: 25px;
-    font-family: cursive;
+    /* font-family: cursive; */
     border-bottom: 2px solid black;
 }
 
@@ -63,8 +65,10 @@ body {
     z-index: 1;
     top: 0;
     width: 100%;
-    background: linear-gradient(#aad4ff, #1E90FF);
-    padding: 15px 0px;
+
+    background: linear-gradient(#7ebfff, #1E90FF);
+    padding: 13px 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     /* box-shadow: inset 0 -50px 50px -40px rgba(255, 255, 255, 0.8); */
 }
 
@@ -74,11 +78,12 @@ body {
 
 .index-header .logo {
     float: left;
-    height: 41px;
-    width: 59px;
+    height: 32px;
+    width: 64px;
     margin-left: 85px;
     background-color: pink;
     background-image: url(images/index_logo.png);
+    background-size: cover;
     border-radius: 5px;
     transition: all .3s;
 }
@@ -95,7 +100,7 @@ body {
     }
 
     16.5% {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
 
     29.9% {
@@ -115,7 +120,7 @@ body {
     }
 
     83.5% {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
 
 
@@ -131,8 +136,8 @@ body {
 .index-header .tabs {
     float: left;
     display: flex;
-    width: 550px;
-    height: 42px;
+    width: 600px;
+    height: 36px;
     margin-left: 30px;
     justify-content: space-between;
     /* background-color: pink; */
@@ -147,16 +152,15 @@ body {
 
 .index-header .tabs a {
     display: inline-block;
-    height: 42px;
-    line-height: 42px;
+    height: 36px;
+    line-height: 36px;
     font-size: 16px;
     color: white;
-    padding: 0 20px;
+    padding: 0 25px;
     border-radius: 21px;
     text-decoration: none;
     transition: color .3s;
     transition: all .3s;
-    font-weight: 550;
 }
 
 .index-header .tabs div a:hover {
@@ -178,8 +182,8 @@ body {
 .index-header .profile {
     float: right;
     margin-right: 85px;
-    height: 42px;
-    width: 42px;
+    height: 32px;
+    width: 32px;
     background-color: pink;
     background-image: url(images/avatar_3.jpg);
     background-size: cover;
@@ -192,25 +196,25 @@ body {
     cursor: pointer;
 }
 
-.index-header .profile .ad {
+/* .index-header .profile .ad {
     position: absolute;
     top: 60px;
     right: 50px;
     height: 30px;
     width: 100px;
     background-color: pink;
-}
+} */
 
-
+/* 
 .short-transition-effect {
     transition: all 0.3s ease
-}
+} */
 
 
 
 .index-header .search {
     float: right;
-    height: 42px;
+    height: 32px;
     width: 200px;
     margin-right: 50px;
     background-color: white;
@@ -224,7 +228,7 @@ body {
 
 .index-header .search input[type="text"] {
     float: left;
-    height: 42px;
+    height: 32px;
     width: 130px;
     font-size: 16px;
     color: black;
@@ -240,8 +244,8 @@ body {
 
 .index-header .search img {
     float: right;
-    height: 28px;
-    margin-top: 7px;
+    height: 24px;
+    margin-top: 4px;
     margin-right: 14px;
     cursor: pointer;
 }
@@ -316,10 +320,9 @@ body {
     margin: 65px 0;
     /* box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5); */
 
-    background-image: url(images/avatar_2.jpg);
+    background-image: url(images/avatar_1.jpg);
     background-size: cover;
     border-radius: 200px;
-    transform: rotate(-15deg);
 
     transition: all .5s;
 }
@@ -340,7 +343,6 @@ body {
     height: 400px;
     width: 650px;
     margin: 20px 50px;
-    /* line-height: 600px; */
     margin-right: 0px;
     padding: 20px 50px;
     background-color: #f3f3f3;
@@ -421,13 +423,6 @@ body {
 }
 
 
-
-
-
-/* .about .right:hover {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-} */
-
 .about .right h4 {
     height: 40px;
     width: fit-content;
@@ -435,7 +430,6 @@ body {
     text-align: center;
     line-height: 40px;
     padding: 0 40px;
-    font-family: cursive;
 
 }
 
@@ -445,8 +439,8 @@ body {
     margin-top: 20px;
     font-size: 18px;
     line-height: 2em;
-    font-family: cursive;
     transition: all .5s;
+    text-indent: 4em;
     /* background-color: rgba(0, 0, 0, 0.05); */
 
 }
@@ -510,8 +504,6 @@ body {
 }
 
 
-
-
 .skillset .container {
     display: flex;
     height: 320px;
@@ -553,7 +545,7 @@ body {
 }
 
 .skillset .skill-type:hover {
-    transform: translate(0, -3px);
+    /* transform: scale(1.005); */
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -610,7 +602,7 @@ body {
     height: max-content;
     width: max-content;
     margin-top: 200px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 
@@ -629,18 +621,18 @@ body {
     margin-left: -1px;
     height: 100%;
     width: 2px;
-    background-color: black;
+    background-color: rgb(150, 150, 150);
 }
 
 .education .phase .timeline::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 50%;
     height: 14px;
     width: 14px;
     margin-left: -7px;
-    background-color: black;
+    background-color: rgb(150, 150, 150);
     border-radius: 14px;
 }
 
@@ -667,11 +659,24 @@ body {
 
 .education .phase .school p {
     margin-bottom: 10px;
+    line-height: 1.75;
 }
 
 .education .phase .school .period {
     margin-bottom: 50px;
 }
+
+
+
+
+/* ------------------------------- section-portfolio ------------------------------- */
+.qualification {
+    height: max-content;
+    width: max-content;
+    margin-top: 200px;
+}
+
+
 
 
 
@@ -812,7 +817,7 @@ body {
     height: 600px;
     width: 800px;
     margin-top: 200px;
-    background-color: pink;
+    /* background-color: pink; */
     justify-content: space-between;
 }
 
@@ -821,7 +826,7 @@ body {
     width: 100%;
     height: 490px;
     margin: 0 auto;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 .contact .container h4 {
@@ -832,7 +837,7 @@ body {
 .contact .container .left {
     flex: 2;
     width: 390px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     /* text-align: left; */
 
 }
@@ -842,16 +847,38 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 420px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 
-.contact .container .left li {
+.contact .container .left ul li {
     list-style: none;
+
     height: 125px;
     width: 300px;
-    background-color: bisque;
+    /* background-color: bisque; */
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgb(150, 150, 150, 0.5);
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
+
+.contact .container .left ul li img {
+    height: 40px;
+    width: 40px;
+    /* background-color: pink; */
+    margin-top: 10px;
+}
+
+.contact .container .left ul li p {}
+
+.contact .container .left ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+
 
 
 
@@ -870,7 +897,7 @@ body {
     height: 400px;
     width: 100%;
     /* background-color: rgba(30, 144, 255, 0.9); */
-    background: linear-gradient(#0160c0, #1E90FF, #aad4ff);
+    background: linear-gradient(#0160c0, #1E90FF);
     border-top: 2px solid rgb(199, 199, 199, 0.8);
 }
 
@@ -888,6 +915,10 @@ body {
     width: 120px;
     margin: 15px auto 0;
     /* background-image: url(images/avatar_3.jpg); */
+}
+
+.footer .nav img:nth-child(2) {
+    width: 240px;
 }
 
 .footer .nav .tabs {
@@ -911,7 +942,7 @@ body {
 .footer .nav .as {
     display: flex;
     /* height: 50px; */
-    width: 250px;
+    width: 320px;
     /* background-color: purple; */
     justify-content: space-between;
     /* margin: 0 auto; */
@@ -921,25 +952,19 @@ body {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-size: contain;
+    background-size: cover;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px;
 }
 
-.footer .nav .as a:nth-child(1) {
-    background-image: url(images/ic_cpp.png);
+.footer .nav .as a img {
+    height: 28px;
+    width: 28px;
+    margin-top: 6px;
 }
 
-.footer .as a:nth-child(2) {
-    background-image: url(images/ic_cpp.png);
 
-}
-
-.footer .as a:nth-child(3) {
-    background-image: url(images/ic_cpp.png);
-
-}
 
 
 .footer .links {
