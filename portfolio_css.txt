@@ -10,12 +10,10 @@
 }
 
 .section {
-    min-height: 300px;
+    min-height: 600px;
     width: 100%;
     margin: 100px auto;
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* filter: blur(8px); */
-    /* border: ; */
+    /* background-color: purple; */
 }
 
 #skillset {
@@ -24,12 +22,9 @@
 
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 body {
-    background-color: #f6f6f6;
+    background-color: #f5f5f5;
 }
 
 h2 {
@@ -189,8 +184,8 @@ body {
     margin-right: 85px;
     height: 32px;
     width: 32px;
-    background-color: white;
-    background-image: url(images/avatar_koutu.png);
+    background-color: pink;
+    background-image: url(images/avatar_3.jpg);
     background-size: cover;
     border-radius: 24px;
 }
@@ -305,61 +300,10 @@ body {
     /* transform: translate(0, -50%); */
 }
 
-/* ------------------------------- cv ------------------------------- */
-@keyframes ani_cv {
-    50% {
-        transform: scale(1.05);
-    }
-}
-
-.cv {
-    position: fixed;
-    z-index: 1;
-    right: 30px;
-    bottom: 80px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 20px;
-    border: 2px solid rgba(0, 0, 0, 0.7);
-    transition: all 1s;
-}
-
-.cv a {
-    display: flex;
-    height: 50px;
-    width: 200px;
-    text-decoration: none;
-    align-items: center;
-}
 
 
-.cv a img {
-    height: 50px;
-    flex: 1;
-    animation: ani_cv 1s infinite 1s;
-}
-
-.cv a div {
-    flex: 3;
-    font-size: 20px;
-    text-align: center;
-    color: black;
-    font-weight: 700;
-    animation: ani_cv 1s infinite;
-}
-
-.cv a div:hover {
-    text-decoration: underline;
-    animation: none;
-}
-
-
-
-
-
-
-/* ------------------------------- welcome ------------------------------- */
-.welcome {
+/* ------------------------------- about ------------------------------- */
+.about {
     /* border-radius: 30px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5); */
     /* height: 600px; */
@@ -369,24 +313,23 @@ body {
 
 }
 
-.welcome .left {
+.about .left {
     float: left;
     height: 350px;
     width: 350px;
     margin: 65px 0;
     /* box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5); */
 
-    background-image: url(images/avatar_koutu.png);
+    background-image: url(images/avatar_1.jpg);
     background-size: cover;
     border-radius: 200px;
-    border: 2px solid black;
 
-    transition: all .3s;
+    transition: all .5s;
 }
 
 
 
-.welcome .left:hover {
+.about .left:hover {
     border-radius: 30px;
     cursor: pointer;
     transform: scale(1.1);
@@ -394,7 +337,7 @@ body {
 }
 
 
-.welcome .right {
+.about .right {
     position: relative;
     float: left;
     height: 400px;
@@ -408,7 +351,7 @@ body {
     transition: all .5s;
 }
 
-.welcome .right::before {
+.about .right::before {
     position: absolute;
     content: "";
     top: -5px;
@@ -480,7 +423,7 @@ body {
 }
 
 
-.welcome .right h4 {
+.about .right h4 {
     height: 40px;
     width: fit-content;
     font-size: 28px;
@@ -490,7 +433,7 @@ body {
 
 }
 
-.welcome .right p {
+.about .right p {
     overflow: scroll;
     height: 300px;
     margin-top: 20px;
@@ -503,13 +446,13 @@ body {
 }
 
 /* 隐藏滚动条 */
-.welcome .right p::-webkit-scrollbar {
+.about .right p::-webkit-scrollbar {
     display: none;
 }
 
 
 
-.welcome .right a {
+.about .right a {
     position: absolute;
     display: none;
     top: 50%;
@@ -525,33 +468,33 @@ body {
 }
 
 
-.welcome .right .prev {
+.about .right .prev {
     left: 0;
     border-radius: 0 40px 40px 0;
 }
 
 
-.welcome .right .next {
+.about .right .next {
     right: 0;
     border-radius: 40px 0 0 40px;
 }
 
 /* 进入显示 */
-.welcome .right:hover .prev,
-.welcome .right:hover .next {
+.about .right:hover .prev,
+.about .right:hover .next {
     display: block;
     transition: all .3s;
 }
 
-.welcome .right:hover .prev:hover,
-.welcome .right:hover .next:hover {
+.about .right:hover .prev:hover,
+.about .right:hover .next:hover {
     background-color: black;
 }
 
 
 
 
-/* ------------------------------- skillset ------------------------------- */
+/* ------------------------------- about ------------------------------- */
 .skillset {
     margin-top: 200px;
     width: max-content;
@@ -563,7 +506,7 @@ body {
 
 .skillset .container {
     display: flex;
-    height: auto;
+    height: 320px;
     width: 700px;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -591,8 +534,8 @@ body {
 
 .skillset .container .skill-type {
     background-color: white;
-    height: 390px;
-    width: 300px;
+    height: 320px;
+    width: 280px;
     border-radius: 10px;
     border: 2px solid rgb(199, 199, 199, 0.8);
     margin: 20px auto;
@@ -609,7 +552,7 @@ body {
 .skillset .container .skill-type ul {
     display: flex;
     flex-direction: column;
-    height: 330px;
+    height: 260px;
     align-items: center;
 
 }
@@ -619,7 +562,7 @@ body {
 .skillset li {
     /* display: flex; */
     height: 70px;
-    width: 250px;
+    width: 230px;
     margin: 6px auto;
     border-radius: 15px;
     padding-left: 20px;
@@ -726,8 +669,8 @@ body {
 
 
 
-/* ------------------------------- section-coding-exp ------------------------------- */
-.coding-exp {
+/* ------------------------------- section-portfolio ------------------------------- */
+.qualification {
     height: max-content;
     width: max-content;
     margin-top: 200px;
@@ -739,186 +682,61 @@ body {
 
 
 /* ------------------------------- section-portfolio ------------------------------- */
-
 .portfolio {
-    height: auto;
+    height: 850px;
     width: max-content;
     /* background-color: pink; */
     padding-bottom: 20px;
     margin-top: 200px;
 }
 
-.portfolio .portfolio-tabs ul {
-    display: flex;
-    width: 500px;
-    justify-content: space-between;
-    flex-direction: row;
-    /* background-color: pink; */
-}
-
-.portfolio .portfolio-tabs li {
-    list-style: none;
-}
-
-
-
-.portfolio .portfolio-tabs li a {
-    height: 20px;
-    width: auto;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: 2px solid #1E90FF;
-    border-radius: 10px;
-    font-weight: 700;
-    color: #1E90FF;
-}
-
-.portfolio .portfolio-tabs .active {
-    color: white;
-    background-color: #1E90FF;
-}
-
-
 
 .portfolio .container {
-    /* display: flex; */
-    flex-wrap: wrap;
-    height: auto;
-    width: auto;
-    padding: 0px 20px;
-    /* background-color: pink; */
+    height: max-content;
+    width: 840px;
+    padding: 0px 40px;
 }
 
 
 .portfolio .container li {
-    display: flex;
-    height: auto;
-    width: 850px;
+    float: left;
+    height: 320px;
+    width: 240px;
     box-sizing: border-box;
     background-color: white;
     list-style: none;
-    margin: 30px;
+    margin: 30px 60px 30px 0;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
     transition: all .3s;
-    /* background-color: pink; */
 
     /* border: 1px solid black; */
-
-    /* left300 right800 */
 }
 
 .portfolio .container li:hover {
     /* cursor: pointer; */
-    transform: translate(0, -2px);
-    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    box-shadow: 0px 2px 14px 2px rgba(0, 0, 0, 0.3);
 
 }
 
 
-
-.portfolio .container li .left {
-    display: inline-block;
-    flex: 3;
-    /* height: 100%; */
-    /* width: 224px; */
+.portfolio .container li:nth-child(3),
+.portfolio .container li:nth-child(6) {
+    margin-right: 0px;
 }
 
 
 
-.portfolio .container li .left img {
-    height: 160px;
-    width: 160px;
-    margin: 18px 30px;
+.portfolio .container li img {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
     box-sizing: border-box;
     border-radius: 20px;
     border: 1px solid black;
 }
-
-
-
-.portfolio .container li .right {
-    flex: 8;
-    position: relative;
-    box-sizing: border-box;
-    height: auto;
-    /* width: 596px; */
-    text-align: left;
-    padding: 20px;
-    transition: all .5s;
-
-}
-
-.portfolio .container li .right h4 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.portfolio .container li .right p {
-    height: 70px;
-    margin-bottom: 15px;
-    line-height: 1.5;
-    overflow: hidden;
-}
-
-.portfolio .container li .right .readmore {
-    position: absolute;
-    bottom: 40px;
-    right: 20px;
-
-    height: 20px;
-    color: #929292;
-    font-size: 16px;
-    /* width: 50px; */
-}
-
-.portfolio .container li .right:hover .readmore {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-
-
-.portfolio .container li .right a {
-    display: inline-block;
-    box-sizing: border-box;
-    height: 40px;
-    width: 180px;
-    /* background-color: pink; */
-}
-
-.portfolio .container li .right a:hover {
-    cursor: pointer;
-}
-
-
-.portfolio .container li .right a div {
-    float: left;
-    /* background-color: #f3f3f3; */
-    font-size: 20px;
-    text-decoration: none;
-    line-height: 40px;
-    color: #515151;
-}
-
-
-.portfolio .container li .right a img {
-    float: left;
-    height: 30px;
-    margin-top: 5px;
-    margin-left: 5px;
-    transition: all .2s;
-}
-
-.portfolio .container li:hover .right a img {
-    transform: translateX(20px);
-}
-
-
-
-
-
 
 
 
@@ -999,7 +817,7 @@ body {
     height: 600px;
     width: 800px;
     margin-top: 200px;
-    /* background-color: pink; */
+    background-color: pink;
     justify-content: space-between;
 }
 
@@ -1008,7 +826,7 @@ body {
     width: 100%;
     height: 490px;
     margin: 0 auto;
-    /* background-color: purple; */
+    background-color: purple;
 }
 
 .contact .container h4 {
@@ -1019,25 +837,25 @@ body {
 .contact .container .left {
     flex: 2;
     width: 390px;
-    /* background-color: skyblue; */
+    background-color: skyblue;
     /* text-align: left; */
 
 }
 
 .contact .container .left ul {
     display: flex;
-    /* flex-direction: ; */
+    flex-direction: column;
     justify-content: space-between;
-    height: 320px;
-    /* background-color: pink; */
+    height: 420px;
+    background-color: #fff;
 }
 
 
 .contact .container .left ul li {
     list-style: none;
 
-    height: 150px;
-    width: 200px;
+    height: 125px;
+    width: 300px;
     /* background-color: bisque; */
     text-align: center;
     border-radius: 20px;
@@ -1047,8 +865,8 @@ body {
 }
 
 .contact .container .left ul li img {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     /* background-color: pink; */
     margin-top: 10px;
 }
