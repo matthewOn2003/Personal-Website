@@ -1,0 +1,306 @@
+/* ------------------------------- section-portfolio ------------------------------- */
+
+.portfolio {
+    height: auto;
+    width: max-content;
+    background-color: skyblue;
+    padding-bottom: 20px;
+    margin-top: 200px;
+}
+
+.portfolio .portfolio-tabs ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    flex-direction: row;
+    /* background-color: pink; */
+}
+
+.portfolio .portfolio-tabs li {
+    list-style: none;
+}
+
+
+
+.portfolio .portfolio-tabs li a {
+    height: 20px;
+    width: auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #1E90FF;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #1E90FF;
+}
+
+.portfolio .portfolio-tabs .active {
+    color: white;
+    background-color: #1E90FF;
+}
+
+
+
+.portfolio .container {
+    /* display: flex; */
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    padding: 0px 20px;
+    /* background-color: pink; */
+}
+
+
+.portfolio .container li {
+    display: flex;
+    height: auto;
+    width: 850px;
+    box-sizing: border-box;
+    background-color: white;
+    list-style: none;
+    margin: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+    /* background-color: pink; */
+
+    /* border: 1px solid black; */
+
+    /* left300 right800 */
+}
+
+.portfolio .container li:hover {
+    /* cursor: pointer; */
+    transform: translate(0, -2px);
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+.portfolio .container li .left {
+    display: inline-block;
+    flex: 3;
+    /* height: 100%; */
+    /* width: 224px; */
+}
+
+
+
+.portfolio .container li .left img {
+    height: 160px;
+    width: 160px;
+    margin: 18px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+
+.portfolio .container li .right {
+    flex: 8;
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    /* width: 596px; */
+    text-align: left;
+    padding: 20px;
+    transition: all .5s;
+
+}
+
+.portfolio .container li .right h4 {
+    margin-bottom: 15px;
+}
+
+.portfolio .container li .right p {
+    height: 70px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.portfolio .container li .right .readmore {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+
+    height: 20px;
+    color: #929292;
+    font-size: 16px;
+    /* width: 50px; */
+}
+
+.portfolio .container li .right:hover .readmore {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.portfolio .container li .right a {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 180px;
+    /* background-color: pink; */
+}
+
+.portfolio .container li .right a:hover {
+    cursor: pointer;
+}
+
+
+.portfolio .container li .right a div {
+    float: left;
+    /* background-color: #f3f3f3; */
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 40px;
+    color: #515151;
+}
+
+
+.portfolio .container li .right a img {
+    float: left;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: all .2s;
+}
+
+.portfolio .container li:hover .right a img {
+    transform: translateX(20px);
+}
+
+@media (max-width: 750px) {
+    .portfolio {
+        height: auto;
+        width: auto;
+        background-color: skyblue;
+        padding-bottom: 20px;
+        margin-top: 200px;
+    }
+
+    .portfolio .portfolio-tabs ul {
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: pink;
+    }
+
+    .portfolio .portfolio-tabs li a {
+        height: 20px;
+        width: auto;
+        padding: 8px 16px;
+        text-decoration: none;
+        border: 2px solid #1E90FF;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #1E90FF;
+
+    }
+
+    .portfolio .container {
+        /* display: flex; */
+        flex-wrap: wrap;
+        height: auto;
+        width: auto;
+        padding: 0px 16px;
+        background-color: pink;
+    }
+
+    .portfolio .container li {
+        display: flex;
+        height: auto;
+        width: 400px;
+        box-sizing: border-box;
+        background-color: white;
+        list-style: none;
+        margin: 21px auto;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+        transition: all .3s;
+        /* background-color: pink; */
+
+        /* border: 1px solid black; */
+
+        /* left300 right800 1180*295*/
+    }
+
+    .portfolio .container li .left img {
+        height: 75px;
+        width: 75px;
+        margin: 12px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    .portfolio .container li .right {
+        flex: 8;
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        /* width: 596px; */
+        text-align: left;
+        padding: 16px;
+        transition: all .5s;
+
+    }
+
+    .portfolio .container li .right h4 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .portfolio .container li .right p {
+        height: 0px;
+        margin-bottom: 12px;
+        line-height: 1.5;
+        font-size: 14px;
+        overflow: hidden;
+    }
+
+    .portfolio .container li .right .readmore {
+        position: absolute;
+        bottom: 30px;
+        right: 16px;
+
+        height: 16px;
+        color: #929292;
+        font-size: 14px;
+        /* width: 50px; */
+    }
+
+    .portfolio .container li .right a {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 30px;
+        width: 135px;
+        /* font-size: 14px; */
+        /* background-color: pink; */
+    }
+
+    .portfolio .container li .right a div {
+        float: left;
+        /* background-color: #f3f3f3; */
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 30px;
+        color: #515151;
+    }
+
+    .portfolio .container li .right a img {
+        float: left;
+        height: 22px;
+        margin-top: 5px;
+        margin-left: 5px;
+        transition: all .2s;
+    }
+
+}

@@ -1,0 +1,44 @@
+/* ------------------------------- section-coding-exp ------------------------------- */
+.coding-exp {
+    height: max-content;
+    width: max-content;
+    margin-top: 200px;
+}
+
+.coding-exp ul {
+    display: flex;
+    width: auto;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    /* background-color: #fff; */
+    /* direction: rtl; */
+}
+
+.coding-exp ul li img {
+    width: 90%;
+}
+
+
+@media (max-width: 750px) {
+    .coding-exp {
+        height: auto;
+        width: auto;
+        margin-top: 200px;
+    }
+
+    .coding-exp ul {
+        display: flex;
+        width: 80%;
+        list-style: none;
+        flex-wrap: wrap;
+        /* background-color: #fff; */
+        /* direction: rtl; */
+    }
+
+    .coding-exp ul li img {
+        width: 100%;
+    }
+
+}

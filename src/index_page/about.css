@@ -1,0 +1,206 @@
+/* ------------------------------- about ------------------------------- */
+.about {
+    /* border-radius: 30px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5); */
+    /* height: 600px; */
+    height: 600px;
+    width: 90%;
+    background-color: skyblue;
+
+}
+
+.about .container {
+    display: flex;
+    width: max-content;
+    background-color: #929292;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about .container .left {
+    /* float: left; */
+    flex: 2;
+    height: 350px;
+    width: 350px;
+
+    background-image: url(images/avatar_koutu.png);
+    background-size: cover;
+    background-color: #fff;
+    border-radius: 200px;
+    border: 2px solid black;
+
+    transition: all .3s;
+}
+
+
+
+.about .container .right {
+    position: relative;
+    height: 400px;
+    width: 650px;
+    margin-left: 40px;
+    padding: 20px 50px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    transition: all .5s;
+}
+
+.about .container .right::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -5px;
+    height: 5px;
+    width: 5px;
+    background-color: #1E90FF;
+    /* box-shadow: 0px 0px 10px 0px #1E90FF; */
+    animation: move 5s linear infinite;
+
+}
+
+
+/* @media (max-width: 1200px) {
+    .about {
+        height: 1000px;
+    }
+
+    .about .container {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about .container .left {}
+
+    .about .container .right {
+        margin-left: 0;
+    }
+} */
+
+
+
+@keyframes move {
+    0% {
+        height: 5px;
+        width: 5px;
+        transform: translate(0, 0);
+
+    }
+
+    12.5% {
+        height: 5px;
+        width: 100px;
+        transform: translate(524px, 0);
+    }
+
+    25% {
+        height: 5px;
+        width: 5px;
+        transform: translate(755px, 0);
+
+    }
+
+    37.5% {
+        height: 62px;
+        width: 5px;
+        transform: translate(755px, 356px);
+    }
+
+    50% {
+        height: 5px;
+        width: 5px;
+        transform: translate(755px, 445px);
+    }
+
+    62.5% {
+        height: 5px;
+        width: 100px;
+        transform: translate(131px, 445px);
+    }
+
+    75% {
+        height: 5px;
+        width: 5px;
+        transform: translate(0, 445px);
+    }
+
+    87.5% {
+        height: 62px;
+        width: 5px;
+        transform: translate(0px, 89px);
+    }
+
+    100% {
+        height: 5px;
+        width: 5px;
+        transform: translate(0, 0);
+    }
+}
+
+
+.about .right h4 {
+    height: 40px;
+    width: fit-content;
+    line-height: 40px;
+    padding: 0 40px;
+
+}
+
+.about .right p {
+    overflow: scroll;
+    height: 300px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 2em;
+    transition: all .5s;
+    text-indent: 4em;
+    /* background-color: rgba(0, 0, 0, 0.05); */
+
+}
+
+/* 隐藏滚动条 */
+.about .right p::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.about .right a {
+    position: absolute;
+    display: none;
+    top: 50%;
+    height: 80px;
+    width: 40px;
+    margin-top: -40px;
+    font-size: 48px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgba(30, 144, 255, 0.5);
+}
+
+
+.about .right .prev {
+    left: 0;
+    border-radius: 0 40px 40px 0;
+}
+
+
+.about .right .next {
+    right: 0;
+    border-radius: 40px 0 0 40px;
+}
+
+/* 进入显示 */
+.about .right:hover .prev,
+.about .right:hover .next {
+    display: block;
+    transition: all .3s;
+}
+
+.about .right:hover .prev:hover,
+.about .right:hover .next:hover {
+    background-color: black;
+}

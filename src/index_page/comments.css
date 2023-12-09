@@ -1,0 +1,67 @@
+/* ------------------------------- section-comments ------------------------------- */
+.comments {
+    height: 600px;
+    width: max-content;
+    margin-top: 200px;
+    background-color: pink;
+}
+
+/* .comments .write {
+    background-color: skyblue;
+    height: 50px;
+    width: 600px;
+} */
+
+.comments .container {
+    display: flex;
+    height: 460px;
+    width: 880px;
+    margin-top: 15px;
+    background-color: skyblue;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+@keyframes ani_comments {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -3px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+
+}
+
+.comments .container .data {
+    height: 215px;
+    width: 400px;
+    background-color: bisque;
+    animation: ani_comments 2s infinite ease-in alternate;
+}
+
+.comments .container .data h4 {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: purple;
+}
+
+.comments .container .data p {
+    box-sizing: border-box;
+    height: 120px;
+    /* width: 350px; */
+    background-color: purple;
+    /* padding: 1em; */
+    margin: 20px;
+    overflow: scroll;
+}
+
+.comments .container .data p::-webkit-scrollbar {
+    display: none;
+}

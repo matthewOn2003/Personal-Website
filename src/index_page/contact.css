@@ -1,0 +1,74 @@
+/* ------------------------------- section-contact ------------------------------- */
+.contact {
+    height: 600px;
+    width: 800px;
+    margin-top: 200px;
+    /* background-color: pink; */
+    justify-content: space-between;
+}
+
+.contact .container {
+    display: flex;
+    width: 100%;
+    height: 490px;
+    margin: 0 auto;
+    /* background-color: purple; */
+}
+
+.contact .container h4 {
+    height: 40px;
+}
+
+
+.contact .container .left {
+    flex: 2;
+    width: 390px;
+    /* background-color: skyblue; */
+    /* text-align: left; */
+
+}
+
+.contact .container .left ul {
+    display: flex;
+    /* flex-direction: ; */
+    justify-content: space-between;
+    height: 320px;
+    /* background-color: pink; */
+}
+
+
+.contact .container .left ul li {
+    list-style: none;
+
+    height: 150px;
+    width: 200px;
+    /* background-color: bisque; */
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgb(150, 150, 150, 0.5);
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.contact .container .left ul li img {
+    height: 60px;
+    width: 60px;
+    /* background-color: pink; */
+    margin-top: 10px;
+}
+
+.contact .container .left ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+
+
+
+.contact .container .right {
+    flex: 3;
+    width: 390px;
+    background-color: skyblue;
+
+}

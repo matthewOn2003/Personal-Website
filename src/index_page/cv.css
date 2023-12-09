@@ -1,0 +1,48 @@
+/* ------------------------------- cv ------------------------------- */
+@keyframes ani_cv {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.cv {
+    position: fixed;
+    z-index: 1;
+    right: 30px;
+    bottom: 80px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    transition: all .5s;
+    transform: translate(300px, 0);
+}
+
+.cv a {
+    display: flex;
+    height: 50px;
+    width: 200px;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+.cv a img {
+    height: 50px;
+    flex: 1;
+    animation: ani_cv 1s infinite 1s;
+}
+
+.cv a div {
+    flex: 3;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    animation: ani_cv 1s infinite;
+}
+
+.cv a div:hover {
+    text-decoration: underline;
+    animation: none;
+}

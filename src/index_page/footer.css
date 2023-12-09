@@ -1,0 +1,78 @@
+/* ------------------------------- index-footer ------------------------------- */
+.footer {
+    height: 400px;
+    width: 100%;
+    /* background-color: rgba(30, 144, 255, 0.9); */
+    background: linear-gradient(#0160c0, #1E90FF);
+    border-top: 2px solid rgb(199, 199, 199, 0.8);
+}
+
+.footer .nav {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    /* background-color: pink; */
+    text-align: center;
+}
+
+.footer .nav img {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    margin: 15px auto 0;
+    /* background-image: url(images/avatar_3.jpg); */
+}
+
+.footer .nav img:nth-child(2) {
+    width: 240px;
+}
+
+.footer .nav .tabs {
+    display: flex;
+    height: 50px;
+    width: 320px;
+    /* background-color: purple; */
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .nav .tabs a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+
+
+.footer .nav .as {
+    display: flex;
+    /* height: 50px; */
+    width: 320px;
+    /* background-color: purple; */
+    justify-content: space-between;
+    /* margin: 0 auto; */
+}
+
+.footer .nav .as a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.footer .nav .as a img {
+    height: 28px;
+    width: 28px;
+    margin-top: 6px;
+}
+
+
+
+
+.footer .links {
+    display: flex;
+}

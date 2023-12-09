@@ -1,0 +1,80 @@
+/* Shared */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.section {
+    min-height: max-content;
+    width: 100%;
+    margin: 100px auto;
+    background-color: pink;
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    /* filter: blur(8px); */
+    /* border: ; */
+}
+
+#skillset {
+    /* background-image: url(images/skillset_bgd.jpg); */
+    background-size: cover;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+h2 {
+    height: 80px;
+    width: max-content;
+    line-height: 80px;
+    font-size: 36px;
+    margin: 0 auto 25px;
+    /* font-family: cursive; */
+    border-bottom: 2px solid black;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+} */
+
+.w {
+    margin: 0 auto;
+
+}
+
+@media (max-width: 750px) {
+    h2 {
+        height: 60px;
+        width: max-content;
+        line-height: 60px;
+        font-size: 27px;
+        margin: 0 auto 18px;
+        /* font-family: cursive; */
+        border-bottom: 2px solid black;
+    }
+}

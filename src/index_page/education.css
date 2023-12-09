@@ -1,0 +1,101 @@
+/* ------------------------------- education ------------------------------- */
+.education {
+    height: max-content;
+    width: max-content;
+    margin: 200px auto 0;
+
+    /* background-color: pink; */
+}
+
+
+.education .phase {
+    position: relative;
+    height: max-content;
+    width: 600px;
+    /* background-color: skyblue; */
+    border-bottom: 1px solid transparent;
+}
+
+.education .phase .timeline {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    height: 100%;
+    width: 2px;
+    background-color: rgb(150, 150, 150);
+}
+
+.education .phase .timeline::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    height: 14px;
+    width: 14px;
+    margin-left: -7px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 14px;
+}
+
+
+
+.education .phase .school {
+    height: max-content;
+    width: 45%;
+    /* background-color: bisque; */
+}
+
+.education .phase .university {
+    margin-right: 55%;
+}
+
+.education .phase .middle {
+    margin-left: 55%;
+}
+
+.education .phase .school h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.education .phase .school p {
+    margin-bottom: 10px;
+    line-height: 1.75;
+}
+
+.education .phase .school .period {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 750px) {
+    .education {
+        height: auto;
+        width: auto;
+        /* margin: 200px; */
+    }
+
+    .education .phase {
+        position: relative;
+        height: max-content;
+        width: 400px;
+        /* background-color: skyblue; */
+        margin: 0 auto;
+        border-bottom: 1px solid transparent;
+    }
+
+    .education .phase .school h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .education .phase .school p {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .education .phase .school .period {
+        font-size: 14px;
+    }
+}

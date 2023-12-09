@@ -1,0 +1,187 @@
+/* ------------------------------- skillset ------------------------------- */
+.skillset {
+    margin-top: 200px;
+    width: auto;
+    /* background-color: pink; */
+    height: auto;
+    opacity: 0;
+    transition: all .5s;
+}
+
+
+.skillset .container {
+    display: flex;
+    height: auto;
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: skyblue;
+}
+
+.skillset .container h4 {
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-family: cursive;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(199, 199, 199, 0.8);
+    transition: font-size .3s;
+    /* background-color: bisque; */
+}
+
+/* .skillset h4:hover {
+    font-size: 30px;
+} */
+
+
+.skillset .container .skill-type {
+    background-color: white;
+    height: 390px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid rgb(199, 199, 199, 0.8);
+    margin: 20px auto;
+    padding: 20px 4px 4px 4px;
+    transition: all .3s;
+    /* background-color: skyblue; */
+}
+
+.skillset .skill-type:hover {
+    /* transform: scale(1.005); */
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+}
+
+.skillset .container .skill-type ul {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    align-items: center;
+
+}
+
+
+
+.skillset li {
+    /* display: flex; */
+    height: 70px;
+    width: 250px;
+    margin: 6px auto;
+    border-radius: 15px;
+    padding-left: 20px;
+    list-style: none;
+    transition: all .3s;
+    /* align-items: center; */
+}
+
+.skillset li:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.skillset li img {
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+.skillset li div {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+    width: fit-content;
+    /* background-color: white; */
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 750px) {
+    .skillset .container {
+        display: flex;
+        height: auto;
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+        background-color: skyblue;
+    }
+
+    .skillset .container .skill-type {
+        background-color: white;
+        height: 45%;
+        width: 45%;
+        border-radius: 10px;
+        border: 2px solid rgb(199, 199, 199, 0.8);
+        margin: 20px auto;
+        padding: 20px 4px 4px 4px;
+        transition: all .3s;
+        /* background-color: skyblue; */
+    }
+
+    .skillset .container h4 {
+        height: 15px;
+        line-height: 15px;
+        font-size: 20px;
+        text-align: center;
+        font-family: cursive;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid rgb(199, 199, 199, 0.8);
+        transition: font-size .3s;
+        /* background-color: bisque; */
+    }
+
+    .skillset .container .skill-type {
+        background-color: white;
+        height: 45%;
+        width: 45%;
+        border-radius: 10px;
+        /* border: 2px solid rgb(199, 199, 199, 0.8);
+        margin: 20px auto;
+        padding: 20px 4px 4px 4px;
+        transition: all .3s; */
+        /* background-color: skyblue; */
+    }
+
+    .skillset .container .skill-type ul {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        align-items: center;
+        background-color: pink;
+    }
+
+
+    .skillset li {
+        /* display: flex; */
+        height: 40px;
+        width: 80%;
+        /* margin: 6px auto; */
+        border-radius: 15px;
+        /* padding-left: 20px; */
+        list-style: none;
+        transition: all .3s;
+    }
+
+    .skillset li img {
+        /* float: left; */
+        display: inline-block;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .skillset li div {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 0;
+        width: 110px;
+        background-color: white;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
