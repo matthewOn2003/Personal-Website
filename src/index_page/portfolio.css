@@ -3,7 +3,7 @@
 .portfolio {
     height: auto;
     width: max-content;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     padding-bottom: 20px;
     margin-top: 200px;
 }
@@ -178,7 +178,7 @@
     .portfolio {
         height: auto;
         width: auto;
-        background-color: skyblue;
+        /* background-color: skyblue; */
         padding-bottom: 20px;
         margin-top: 200px;
     }

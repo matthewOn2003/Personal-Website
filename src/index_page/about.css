@@ -5,14 +5,14 @@
     /* height: 600px; */
     height: 600px;
     width: 90%;
-    background-color: skyblue;
+    /* background-color: skyblue; */
 
 }
 
 .about .container {
     display: flex;
     width: max-content;
-    background-color: #929292;
+    /* background-color: #929292; */
     margin: 0 auto;
     align-items: center;
 }

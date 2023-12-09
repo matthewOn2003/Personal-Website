@@ -21,14 +21,14 @@ window.addEventListener('scroll', function () {
 
     prevScrollPos = currentScrollPos; // 更新上一个滚动位置
 
-    // // cv
-    // if (this.window.scrollY > 300 && this.window.scrollY < 5400) {
-    //     cv.style.transform = "translate(0, 0)";
-    // } else {
-    //     cv.style.transform = "translate(300px, 0)";
-    // }
+    // cv
+    if (this.window.scrollY > 300 && this.window.scrollY < 5400) {
+        cv.style.transform = "translate(0, 0)";
+    } else {
+        cv.style.transform = "translate(300px, 0)";
+    }
 
-    // // skillset
+    // skillset
     // if (y > 1200 && y < 2200) {
     //     skillset_part.style.opacity = '1';
     // } else {
@@ -234,24 +234,24 @@ readmores.forEach(readmore => {
 
 
 // --------------------------- Contact ---------------------------
-let userName = document.getElementById('name').value;
-let phone = document.getElementById('phone').value;
-let email = document.getElementById('email').value;
+// let userName = document.getElementById('name').value;
+// let phone = document.getElementById('phone').value;
+// let email = document.getElementById('email').value;
 
-let messageBody = userName + "</br>" + phone + "</br>" + email;
+// let messageBody = userName + "</br>" + phone + "</br>" + email;
 
-function emailSend() {
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "wuxu0319@gmail.com",
-        Password: "659C119C6154EA0374E41A30947EC082EAB9",
-        To: 'onwuxu@gmail.com',
-        From: "wuxu0319@gmail.com",
-        Subject: "subject",
-        Body: messageBody
-    }).then(
-        message => alert(message)
-    );
-}
+// function emailSend() {
+//     Email.send({
+//         Host: "smtp.elasticemail.com",
+//         Username: "wuxu0319@gmail.com",
+//         Password: "659C119C6154EA0374E41A30947EC082EAB9",
+//         To: 'onwuxu@gmail.com',
+//         From: "wuxu0319@gmail.com",
+//         Subject: "subject",
+//         Body: messageBody
+//     }).then(
+//         message => alert(message)
+//     );
+// }
 
 
