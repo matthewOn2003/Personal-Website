@@ -3,16 +3,16 @@
     /* border-radius: 30px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5); */
     /* height: 600px; */
-    height: 600px;
-    width: 90%;
-    /* background-color: skyblue; */
+    height: auto;
+    width: 1142px;
+    background-color: pink;
 
 }
 
 .about .container {
     display: flex;
-    width: max-content;
-    /* background-color: #929292; */
+    height: auto;
+    width: auto;
     margin: 0 auto;
     align-items: center;
 }
@@ -203,4 +203,73 @@
 .about .right:hover .prev:hover,
 .about .right:hover .next:hover {
     background-color: black;
+}
+
+@media (max-width: 750px) {
+    .about {
+        /* border-radius: 30px;
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5); */
+        /* height: 600px; */
+        height: auto;
+        width: 80%;
+        background-color: pink;
+
+    }
+
+    .about .container {
+        display: block;
+        width: auto;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .about .container .left {
+        /* float: left; */
+        display: inline-block;
+        /* height: 100%; */
+        width: 90%;
+        margin-left: 4%;
+
+        background-image: url(images/avatar_koutu.png);
+        background-size: cover;
+        background-color: #fff;
+        border-radius: 200px;
+        border: 2px solid black;
+
+        transition: all .3s;
+    }
+
+    .about .container .right {
+        position: relative;
+        height: 50%;
+        width: 70%;
+        /* margin-left: 0px; */
+        margin: 0 auto;
+        padding: 16px 40px;
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+        transition: all .5s;
+    }
+
+    .about .right h4 {
+        /* text-align: center; */
+        height: 32px;
+        width: auto;
+        line-height: 32px;
+        padding: 0 32px;
+        font-size: 18px;
+    }
+
+    .about .right p {
+        overflow: scroll;
+        /* height: auto; */
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 2em;
+        transition: all .5s;
+        text-indent: 2em;
+        /* background-color: rgba(0, 0, 0, 0.05); */
+
+    }
 }

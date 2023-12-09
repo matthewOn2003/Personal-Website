@@ -1,5 +1,4 @@
 /* ------------------------------- section-portfolio ------------------------------- */
-
 .portfolio {
     height: auto;
     width: max-content;
@@ -175,9 +174,10 @@
 }
 
 @media (max-width: 750px) {
+
     .portfolio {
         height: auto;
-        width: auto;
+        width: 80%;
         /* background-color: skyblue; */
         padding-bottom: 20px;
         margin-top: 200px;
@@ -185,7 +185,7 @@
 
     .portfolio .portfolio-tabs ul {
         display: flex;
-        width: 75%;
+        width: 80%;
         justify-content: space-between;
         flex-direction: row;
         background-color: pink;
@@ -209,14 +209,14 @@
         flex-wrap: wrap;
         height: auto;
         width: auto;
-        padding: 0px 16px;
+        padding: 0px;
         background-color: pink;
     }
 
     .portfolio .container li {
         display: flex;
         height: auto;
-        width: 400px;
+        width: 100%;
         box-sizing: border-box;
         background-color: white;
         list-style: none;

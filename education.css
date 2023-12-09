@@ -71,21 +71,21 @@
 @media (max-width: 750px) {
     .education {
         height: auto;
-        width: auto;
+        width: 80%;
         /* margin: 200px; */
     }
 
     .education .phase {
         position: relative;
         height: max-content;
-        width: 400px;
+        width: 80%;
         /* background-color: skyblue; */
         margin: 0 auto;
         border-bottom: 1px solid transparent;
     }
 
     .education .phase .school h4 {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 10px;
     }
 

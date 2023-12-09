@@ -25,7 +25,7 @@
     text-align: center;
     font-family: cursive;
     padding-bottom: 20px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     border-bottom: 2px solid rgb(199, 199, 199, 0.8);
     transition: font-size .3s;
     /* background-color: bisque; */
@@ -56,9 +56,8 @@
 .skillset .container .skill-type ul {
     display: flex;
     flex-direction: column;
-    height: 330px;
+    height: auto;
     align-items: center;
-
 }
 
 
@@ -68,17 +67,21 @@
     height: 70px;
     width: 250px;
     margin: 6px auto;
-    border-radius: 15px;
+    border-radius: 5px;
     padding-left: 20px;
     list-style: none;
     transition: all .3s;
+    /* background-color: #fff; */
+    /* border-bottom: 1px solid black; */
     /* align-items: center; */
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+
 }
 
 .skillset li:hover {
     cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -94,13 +97,22 @@
     margin: 0 10px;
     padding: 0;
     width: fit-content;
-    /* background-color: white; */
     font-size: 18px;
     margin-top: 15px;
 }
 
 
 @media (max-width: 750px) {
+    .skillset {
+        margin-top: 200px;
+        width: 80%;
+        /* background-color: pink; */
+        height: auto;
+        /* opacity: 0; */
+        transition: all .5s;
+    }
+
+
     .skillset .container {
         display: flex;
         height: auto;
@@ -108,29 +120,28 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 0 auto;
-        background-color: skyblue;
     }
 
     .skillset .container .skill-type {
         background-color: white;
-        height: 45%;
-        width: 45%;
+        height: 40%;
+        width: 40%;
         border-radius: 10px;
         border: 2px solid rgb(199, 199, 199, 0.8);
-        margin: 20px auto;
+        margin: 8px auto;
         padding: 20px 4px 4px 4px;
         transition: all .3s;
         /* background-color: skyblue; */
     }
 
     .skillset .container h4 {
-        height: 15px;
-        line-height: 15px;
-        font-size: 20px;
+        height: 10px;
+        line-height: 10px;
+        font-size: 16px;
         text-align: center;
         font-family: cursive;
-        padding-bottom: 20px;
-        margin-bottom: 10px;
+        padding-bottom: 14px;
+        /* margin-bottom: 10px; */
         border-bottom: 2px solid rgb(199, 199, 199, 0.8);
         transition: font-size .3s;
         /* background-color: bisque; */
@@ -153,35 +164,31 @@
         flex-direction: column;
         height: 40%;
         align-items: center;
-        background-color: pink;
     }
 
 
     .skillset li {
-        /* display: flex; */
+        display: flex;
         height: 40px;
         width: 80%;
-        /* margin: 6px auto; */
-        border-radius: 15px;
-        /* padding-left: 20px; */
         list-style: none;
         transition: all .3s;
+        align-items: center;
     }
 
     .skillset li img {
         /* float: left; */
-        display: inline-block;
-        height: 30px;
-        margin-top: 5px;
+        display: none;
     }
 
     .skillset li div {
+        text-align: center;
         display: inline-block;
         margin: 0 10px;
-        padding: 0;
-        width: 110px;
-        background-color: white;
-        font-size: 12px;
-        margin-top: 5px;
+        margin-left: -8%;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 700;
+        color: rgb(46, 46, 46);
     }
 }

@@ -22,6 +22,7 @@
 
 .contact .container .left {
     flex: 2;
+    height: auto;
     width: 390px;
     /* background-color: skyblue; */
     /* text-align: left; */
@@ -33,6 +34,7 @@
     /* flex-direction: ; */
     justify-content: space-between;
     height: 320px;
+    flex-wrap: wrap;
     /* background-color: pink; */
 }
 
@@ -71,4 +73,60 @@
     width: 390px;
     background-color: skyblue;
 
+}
+
+@media (max-width: 750px) {
+    .contact {
+        height: auto;
+        width: 80%;
+        margin-top: 200px;
+        justify-content: space-between;
+    }
+
+    .contact .container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        /* background-color: purple; */
+    }
+
+    .contact .container .left {
+        flex: 2;
+        height: auto;
+        width: 390px;
+        /* background-color: skyblue; */
+        /* text-align: left; */
+
+    }
+
+    .contact .container .left ul {
+        display: flex;
+        height: auto;
+        /* flex-direction: ; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* background-color: pink; */
+    }
+
+    .contact .container .left ul li {
+        list-style: none;
+
+        height: auto;
+        width: 60%;
+        margin: 10px auto;
+        text-align: center;
+        border-radius: 20px;
+        border: 1px solid rgb(150, 150, 150, 0.5);
+        box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        padding-bottom: 10px;
+    }
+
+    .contact .container .left ul li img {
+        height: auto;
+        width: 15%;
+        /* background-color: pink; */
+        margin-top: 8px;
+    }
 }
