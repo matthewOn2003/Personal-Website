@@ -56,7 +56,7 @@
 .skillset .container .skill-type ul {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 334px;
     align-items: center;
 }
 
@@ -105,8 +105,7 @@
 @media (max-width: 750px) {
     .skillset {
         margin-top: 200px;
-        width: 80%;
-        /* background-color: pink; */
+        width: 90%;
         height: auto;
         /* opacity: 0; */
         transition: all .5s;
@@ -116,23 +115,12 @@
     .skillset .container {
         display: flex;
         height: auto;
-        width: 95%;
+        width: auto;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 0 auto;
     }
 
-    .skillset .container .skill-type {
-        background-color: white;
-        height: 40%;
-        width: 40%;
-        border-radius: 10px;
-        border: 2px solid rgb(199, 199, 199, 0.8);
-        margin: 8px auto;
-        padding: 20px 4px 4px 4px;
-        transition: all .3s;
-        /* background-color: skyblue; */
-    }
 
     .skillset .container h4 {
         height: 10px;
@@ -149,8 +137,8 @@
 
     .skillset .container .skill-type {
         background-color: white;
-        height: 45%;
-        width: 45%;
+        height: 40%;
+        width: 40%;
         border-radius: 10px;
         /* border: 2px solid rgb(199, 199, 199, 0.8);
         margin: 20px auto;
@@ -164,13 +152,14 @@
         flex-direction: column;
         height: 40%;
         align-items: center;
+        padding: 10px 0;
     }
 
 
     .skillset li {
         display: flex;
         height: 40px;
-        width: 80%;
+        width: 70%;
         list-style: none;
         transition: all .3s;
         align-items: center;
@@ -178,6 +167,7 @@
 
     .skillset li img {
         /* float: left; */
+        height: auto;
         display: none;
     }
 

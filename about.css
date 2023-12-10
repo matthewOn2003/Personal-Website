@@ -5,7 +5,6 @@
     /* height: 600px; */
     height: auto;
     width: 1142px;
-    background-color: pink;
 
 }
 
@@ -212,7 +211,6 @@
         /* height: 600px; */
         height: auto;
         width: 80%;
-        background-color: pink;
 
     }
 
@@ -224,28 +222,26 @@
     }
 
     .about .container .left {
-        /* float: left; */
-        display: inline-block;
-        /* height: 100%; */
-        width: 90%;
-        margin-left: 4%;
-
-        background-image: url(images/avatar_koutu.png);
+        width: 80%;
+        height: auto;
+        padding-bottom: 80%;
         background-size: cover;
-        background-color: #fff;
-        border-radius: 200px;
-        border: 2px solid black;
-
-        transition: all .3s;
+        background-position: center;
+        /* 在小屏幕上将宽度设为100% */
+        /* padding-bottom: 50%; */
+        /* 保持正方形 */
+        /* margin-left: 0; */
+        /* 在小屏幕上将左边距设为0 */
+        margin: 0 auto 20px;
     }
 
     .about .container .right {
         position: relative;
         height: 50%;
-        width: 70%;
+        width: 80%;
         /* margin-left: 0px; */
         margin: 0 auto;
-        padding: 16px 40px;
+        padding: 16px 30px;
         background-color: #f3f3f3;
         border-radius: 10px;
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
@@ -253,22 +249,25 @@
     }
 
     .about .right h4 {
-        /* text-align: center; */
+        text-align: center;
         height: 32px;
         width: auto;
         line-height: 32px;
         padding: 0 32px;
         font-size: 18px;
+        /* background-color: pink; */
+        /* border-bottom: 2px solid rgb(199, 199, 199, 0.8); */
     }
 
     .about .right p {
         overflow: scroll;
         /* height: auto; */
-        margin-top: 20px;
+        margin: 16px 0;
         font-size: 16px;
         line-height: 2em;
         transition: all .5s;
         text-indent: 2em;
+        /* border: 1px solid black; */
         /* background-color: rgba(0, 0, 0, 0.05); */
 
     }
