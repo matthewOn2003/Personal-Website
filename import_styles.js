@@ -14,7 +14,8 @@ const stylesheets = [
     'coding_exp.css',
     'comments.css',
     'contact.css',
-    'footer.css'
+    'footer.css',
+    'progressbar.css'
 ];
 
 // 循环遍历样式表数组，创建并添加 link 元素

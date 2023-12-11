@@ -1,15 +1,35 @@
+// --------------------------- progress bar ---------------------------
+window.onscroll = function () {
+    updateProgressBar();
+};
+
+function updateProgressBar() {
+    const progressBar = document.querySelector(".progressbar");
+    const documentHeight = document.documentElement.scrollHeight - window.innerHeight - 800;
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    const scrollPercentage = (scrollPosition / documentHeight) * 100;
+
+    progressBar.style.width = scrollPercentage + "%";
+    console.log(scrollPosition);
+
+    if (scrollPercentage >= 99.9) {
+        progressBar.style.opacity = '0';
+    } else {
+        progressBar.style.opacity = '1';
+    }
+}
+
 // --------------------------- index-header ---------------------------
 const header = document.querySelector('.index-header');
 let y = 0;
 let prevScrollPos = window.pageYOffset; // 上一个滚动位置
-const cv = document.querySelector('.cv');
 const skillset_part = document.querySelector('.skillset');
 
 window.addEventListener('scroll', function () {
     y = this.window.scrollY;
     let currentScrollPos = window.pageYOffset; // 当前滚动位置
 
-    if (currentScrollPos > prevScrollPos || this.window.scrollY < 600) {
+    if (currentScrollPos > prevScrollPos /*|| this.window.scrollY < 600*/) {
         // 用户向下滚动，header上移
         header.style.transition = "transform .3s"; // 添加过渡效果
         header.style.transform = "translate(0, -72px)"; // 上移72px
@@ -21,12 +41,7 @@ window.addEventListener('scroll', function () {
 
     prevScrollPos = currentScrollPos; // 更新上一个滚动位置
 
-    // cv
-    if (this.window.scrollY > 300 && this.window.scrollY < 5400) {
-        cv.style.transform = "translate(0, 0)";
-    } else {
-        cv.style.transform = "translate(300px, 0)";
-    }
+
 
     // skillset
     // if (y > 1200 && y < 2200) {

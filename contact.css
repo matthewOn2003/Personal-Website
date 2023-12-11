@@ -2,7 +2,7 @@
 .contact {
     height: 600px;
     width: 800px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     /* background-color: pink; */
     justify-content: space-between;
 }
@@ -41,15 +41,16 @@
 
 .contact .container .left ul li {
     list-style: none;
-
     height: 150px;
     width: 200px;
     /* background-color: bisque; */
     text-align: center;
     border-radius: 20px;
     border: 1px solid rgb(150, 150, 150, 0.5);
+    /* background-color: white; */
     box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+    color: white;
 }
 
 .contact .container .left ul li img {
@@ -60,9 +61,36 @@
 }
 
 .contact .container .left ul li a {
+    display: flex;
+    width: 49.5%;
     text-decoration: none;
-    color: gray;
+    margin: 0 auto;
+    margin-top: 3px;
+    align-items: center;
 }
+
+.contact .container .left ul li a div {
+    color: white;
+    line-height: 100%;
+}
+
+.contact .container .left ul li a img {
+    height: 20px;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: all .2s;
+    margin-top: 0px;
+}
+
+.contact .container .left ul li:hover a div {
+    text-decoration: underline;
+}
+
+.contact .container .left ul li:hover a img {
+    transform: translateX(5px);
+}
+
 
 
 

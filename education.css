@@ -2,9 +2,9 @@
 .education {
     height: max-content;
     width: max-content;
-    margin: 200px auto 0;
-
-    /* background-color: pink; */
+    margin: 0 auto;
+    color: white;
+    font-weight: 100;
 }
 
 
@@ -23,7 +23,7 @@
     margin-left: -1px;
     height: 100%;
     width: 2px;
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(255, 255, 255);
 }
 
 .education .phase .timeline::before {
@@ -34,8 +34,9 @@
     height: 14px;
     width: 14px;
     margin-left: -7px;
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(255, 255, 255);
     border-radius: 14px;
+
 }
 
 

@@ -1,0 +1,15 @@
+.progressbar {
+    z-index: 2;
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    background: linear-gradient(to right, transparent, #1e8fffa7, white);
+    /* 使用你希望的颜色，这里用深蓝色作为示例 */
+    border-radius: 0 5px 5px 0;
+    border: 1px solid black;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.5s;
+    /* 添加过渡效果 */
+}

@@ -11,49 +11,79 @@
     <script src="import_styles.js" defer></script>
 
 
-
     <!-- <link rel="stylesheet" href="animation/animate.css"> -->
 </head>
 
 <body>
 
+    <script>
+        document.addEventListener("scroll", function () {
+            var scrolled = window.scrollY;
+            var bodyElement = document.querySelector("body");
+
+            if (window.innerWidth <= 750) {
+                bodyElement.style.backgroundPosition = "center " + -(scrolled * 0.0002) + "px";
+            } else {
+                bodyElement.style.backgroundPosition = "center " + -(scrolled * 0.002) + "px";
+            }
+        });
+    </script>
+
+
+
+
+    <!-- progress bar -->
+    <div class="progressbar"></div>
+
 
 
     <!-- header -->
     <div class="index-header" id="index-header">
-        <div class="logo"></div>
-        <div class="tabs">
-            <div><a href="#about">About</a></div>
-            <div><a href="#skillset">Skillset</a></div>
-            <div><a href="#education">Education</a></div>
-            <div><a href="#portfolio">Portfolio</a></div>
-            <div><a href="#contact">Contact</a></div>
+        <ul class="tabs">
+            <li>
+                <a href="#about">
+                    <img src="images/about.png" alt="about">
+                    <p>About</p>
+                </a>
+            </li>
+            <li>
+                <a href="#skillset">
+                    <img src="images/skillset.png" alt="skillset">
+                    <p>Skillset</p>
+                </a>
+            </li>
+            <li>
+                <a href="#education">
+                    <img src="images/education.png" alt="a">
+                    <p>Education</p>
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio">
+                    <img src="images/portfolio.png" alt="a">
+                    <p>Portfolio</p>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <img src="images/contact.png" alt="a">
+                    <p>Contact</p>
+                </a>
+            </li>
+        </ul>
+
+        <div class="cv">
+            <a href="documents/ON WU XU_Resume.pdf" download="">
+                <img src="images/resume.png" alt="">
+                <div>Resume</div>
+            </a>
         </div>
-        <div class="profile">
-        </div>
-        <!-- <div class="search">
-            <input type="text" placeholder="search...">
-            <img src="images/ic_search.png" alt="">
-        </div> -->
     </div>
 
 
 
-    <!-- evelator -->
-    <!-- <div class="index-evelator">
-        <a href="#" class="goTop">^</a>
-        <a href="#">
-            - - -
-        </a>
-        <a href="#" class="goFooter">V</a>
-    </div> -->
 
-    <div class="cv">
-        <a href="documents/ON WU XU_Resume.pdf" download="">
-            <img src="images/resume.png" alt="">
-            <div> Download CV</div>
-        </a>
-    </div>
+
 
 
     <!-- section-welcome -->
@@ -604,8 +634,13 @@
                                 <strong>WhatsApp</strong><br>
                                 +6011-1113 5229
                             </p>
+
+
                             <a href="https://wa.me/1111135229" target="_blank">
-                                write me &#x2192;
+                                <div>
+                                    write me
+                                </div>
+                                <img src="images/arrow_right.png" alt="">
                             </a>
                         </li>
                         <li>
@@ -616,7 +651,10 @@
                             </p>
                             <a href="mailto:onwuxu@gmail.com?subject=Subject%20Here&body=Message%20Here"
                                 target="_blank">
-                                write me &#x2192;
+                                <div>
+                                    write me
+                                </div>
+                                <img src="images/arrow_right.png" alt="">
                             </a>
                         </li>
                         <li>
@@ -627,7 +665,10 @@
                             </p>
                             <a href="https://www.linkedin.com/messaging/thread/new/?participants=On%20Wu%20Xu%20(Matthew)"
                                 target="_blank">
-                                write me <em>&#x2192;</em>
+                                <div>
+                                    write me
+                                </div>
+                                <img src="images/arrow_right.png" alt="">
                             </a>
                         </li>
                     </ul>
