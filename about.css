@@ -246,20 +246,29 @@
         transition: all .5s;
     }
 
+
+    .about .container .right::before {
+        display: none;
+
+    }
+
+
+
+
     .about .right h4 {
         text-align: center;
-        height: 32px;
+        height: auto;
         width: auto;
         line-height: 32px;
         padding: 0 32px;
         font-size: 18px;
-        /* background-color: pink; */
         /* border-bottom: 2px solid rgb(199, 199, 199, 0.8); */
     }
 
     .about .right p {
         overflow: scroll;
-        /* height: auto; */
+        letter-spacing: 1px;
+        height: auto;
         margin: 16px 0;
         font-size: 16px;
         line-height: 2em;
