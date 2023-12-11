@@ -17,6 +17,7 @@
 
 .portfolio .portfolio-tabs li {
     list-style: none;
+
     /* background-color: white; */
 }
 
@@ -27,7 +28,8 @@
     width: auto;
     padding: 10px 20px;
     text-decoration: none;
-    border: 2px solid white;
+    border: 1px solid white;
+    letter-spacing: 0px;
     border-radius: 10px;
     font-weight: 700;
     color: white;
@@ -193,7 +195,7 @@
 
     .portfolio .portfolio-tabs ul {
         display: flex;
-        width: 80%;
+        width: 100%;
         justify-content: space-between;
         flex-direction: row;
     }
@@ -235,8 +237,8 @@
     }
 
     .portfolio .container li .left img {
-        height: 75px;
-        width: 75px;
+        height: 60px;
+        width: 60px;
         margin: 12px;
         box-sizing: border-box;
         border-radius: 5px;
@@ -250,12 +252,14 @@
         /* width: 596px; */
         text-align: left;
         padding: 16px;
+        padding-bottom: 0;
         transition: all .5s;
 
     }
 
     .portfolio .container li .right h4 {
-        font-size: 18px;
+        font-size: 16px;
+        height: 1em;
         margin-bottom: 8px;
     }
 
@@ -269,34 +273,36 @@
 
     .portfolio .container li .right .readmore {
         position: absolute;
-        bottom: 30px;
+        bottom: 15px;
         right: 16px;
-
         height: 16px;
-        font-size: 14px;
+        font-size: 12px;
         /* width: 50px; */
     }
 
     .portfolio .container li .right a {
+        position: relative;
         display: inline-block;
         box-sizing: border-box;
-        height: 30px;
+        height: auto;
         width: 135px;
+        left: 0px;
+        bottom: 0px;
+
         /* font-size: 14px; */
-        /* background-color: pink; */
     }
 
     .portfolio .container li .right a div {
         float: left;
         /* background-color: #f3f3f3; */
-        font-size: 14px;
+        font-size: 12px;
         text-decoration: none;
-        line-height: 30px;
+        line-height: 25px;
     }
 
     .portfolio .container li .right a img {
         float: left;
-        height: 22px;
+        height: 16px;
         margin-top: 5px;
         margin-left: 5px;
         transition: all .2s;

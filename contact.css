@@ -53,6 +53,7 @@
     color: white;
 }
 
+
 .contact .container .left ul li img {
     height: 60px;
     width: 60px;
@@ -148,6 +149,7 @@
         border: 1px solid rgb(150, 150, 150, 0.5);
         box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
         box-sizing: border-box;
+        font-size: 12px;
         padding-bottom: 10px;
     }
 
@@ -157,4 +159,8 @@
         /* background-color: pink; */
         margin-top: 8px;
     }
+
+
+
+
 }

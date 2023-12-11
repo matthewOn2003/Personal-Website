@@ -79,7 +79,7 @@
     .education .phase {
         position: relative;
         height: max-content;
-        width: 80%;
+        width: 100%;
         /* background-color: skyblue; */
         margin: 0 auto;
         border-bottom: 1px solid transparent;
@@ -88,15 +88,16 @@
     .education .phase .school h4 {
         font-size: 14px;
         margin-bottom: 10px;
+        font-weight: 700;
     }
 
     .education .phase .school p {
         margin-bottom: 10px;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.75;
     }
 
     .education .phase .school .period {
-        font-size: 14px;
+        font-size: 12px;
     }
 }

@@ -268,7 +268,7 @@
     .about .right p {
         overflow: scroll;
         letter-spacing: 1px;
-        height: auto;
+        height: 60%;
         margin: 16px 0;
         font-size: 16px;
         line-height: 2em;
