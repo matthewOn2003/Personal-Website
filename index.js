@@ -43,13 +43,6 @@ window.addEventListener('scroll', function () {
 
 
 
-    // skillset
-    // if (y > 1200 && y < 2200) {
-    //     skillset_part.style.opacity = '1';
-    // } else {
-    //     skillset_part.style.opacity = '0';
-    // }
-
 
 });
 
@@ -94,58 +87,7 @@ window.addEventListener('scroll', function () {
 
 
 
-// --profile
-// const audio = document.querySelector('.index-header .profile audio')
-// let rotationDegree = 0
-// let img = ""
 
-// audio.parentElement.addEventListener('click', function () {
-//     if (audio.paused) {
-//         audio.play()
-//         audio.parentElement.style.animation = "rotate 5s linear infinite"
-//     } else {
-//         audio.pause()
-//         rotationDegree = getCurrentRotationDegree()
-//         audio.parentElement.style.transform = `rotate(${rotationDegree}deg)`
-//         audio.parentElement.style.animation = "none"
-//     }
-// })
-
-// function getCurrentRotationDegree() {
-//     const transformValue = window.getComputedStyle(audio.parentElement, null).getPropertyValue('transform')
-//     const matrix = transformValue.split('(')[1].split(')')[0].split(',')
-//     const a = matrix[0]
-//     const b = matrix[1]
-//     const angle = Math.round(Math.atan2(b, a) * (180 / Math.PI))
-//     return angle
-// }
-
-// const ad = audio.nextElementSibling
-// ad.addEventListener('click', function () {
-//     ad.style.display = "none"
-
-// })
-
-
-
-// --------------------------- section-intro ---------------------------
-// --right
-// const right = document.querySelector('.section-intro .right')
-// const prev = document.querySelector('.section-intro .right .prev')
-// const next = document.querySelector('.section-intro .right .next')
-// const p = document.querySelector('.section-intro .right p')
-
-// right.addEventListener('mouseenter', function () {
-//     prev.style.display = "block"
-//     next.style.display = "block"
-//     p.focus()
-// })
-
-// right.addEventListener('mouseleave', function () {
-//     prev.style.display = "none"
-//     next.style.display = "none"
-//     p.blur()
-// })
 
 
 

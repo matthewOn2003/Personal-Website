@@ -1,13 +1,9 @@
 /* ------------------------------- welcome ------------------------------- */
 .welcome {
-    /* border-radius: 30px;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5); */
-    /* height: 600px; */
     height: 650px;
     width: 100%;
     background-image: url(images/welcome.png);
     background-size: cover;
     background-position: center;
-    /* background-color: pink; */
 
 }
