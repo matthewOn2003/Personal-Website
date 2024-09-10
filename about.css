@@ -24,10 +24,10 @@
 
     background-image: url(images/avatar_koutu.png);
     background-size: cover;
-    /* background-color: #fff; */
     border-radius: 200px;
     border: 2px solid white;
     box-shadow: 0px 0px 10px 0px white;
+    backdrop-filter: blur(3px);
     transition: all .3s;
 }
 
@@ -45,9 +45,10 @@
     width: 650px;
     margin-left: 40px;
     padding: 20px 50px;
-    /* background-color: #f3f3f3; */
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255);
     transition: all .3s;
     color: white;
 }

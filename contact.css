@@ -2,8 +2,6 @@
 .contact {
     height: 600px;
     width: 800px;
-    /* margin-top: 200px; */
-    /* background-color: pink; */
     justify-content: space-between;
 }
 
@@ -43,14 +41,14 @@
     list-style: none;
     height: 150px;
     width: 200px;
-    /* background-color: bisque; */
     text-align: center;
     border-radius: 20px;
     border: 1px solid rgb(150, 150, 150, 0.5);
-    /* background-color: white; */
     box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     color: white;
+    backdrop-filter: blur(3px);
+
 }
 
 
@@ -94,9 +92,6 @@
 
 
 
-
-
-
 .contact .container .right {
     flex: 3;
     width: 390px;
@@ -107,7 +102,7 @@
 @media (max-width: 750px) {
     .contact {
         height: auto;
-        width: 80%;
+        width: auto;
         margin-top: 200px;
         justify-content: space-between;
     }
@@ -124,6 +119,7 @@
         flex: 2;
         height: auto;
         width: 390px;
+
         /* background-color: skyblue; */
         /* text-align: left; */
 
@@ -140,7 +136,6 @@
 
     .contact .container .left ul li {
         list-style: none;
-
         height: auto;
         width: 60%;
         margin: 10px auto;
@@ -150,6 +145,7 @@
         box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
         box-sizing: border-box;
         font-size: 12px;
+
         padding-bottom: 10px;
     }
 
@@ -158,6 +154,7 @@
         width: 15%;
         /* background-color: pink; */
         margin-top: 8px;
+
     }
 
 
