@@ -6,15 +6,9 @@
     width: 100%;
     padding: 10px 0px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    /* 背景模糊效果调整在这里 */
     transform: translate(0, -72px);
     backdrop-filter: blur(5px);
-
-
 }
-
-
-
 
 
 .index-header .logo {
@@ -74,19 +68,10 @@
 
 
 .index-header .tabs {
-    /* float: left; */
-    /* display: flex; */
-    width: 50%;
+    width: 70%;
     height: 42px;
     margin: 0 auto;
-    /* margin-left: 30px; */
-    /* justify-content: space-between; */
-    /* Remove the justify-content property */
-    /* background-color: pink; */
-    /* box-sizing: border; */
     list-style: none;
-    /* 可以根据需要调整值 */
-
 }
 
 .index-header .tabs li {
@@ -143,22 +128,6 @@
 .index-header .profile:hover {
     cursor: pointer;
 }
-
-/* .index-header .profile .ad {
-    position: absolute;
-    top: 60px;
-    right: 50px;
-    height: 30px;
-    width: 100px;
-    background-color: pink;
-} */
-
-/* 
-.short-transition-effect {
-    transition: all 0.3s ease
-} */
-
-
 
 .index-header .search {
     float: right;
@@ -217,9 +186,6 @@
     display: flex;
     align-items: center;
     padding: 0 15px;
-
-    /* padding: 0 20px; */
-    /* margin-top: 10%; */
     border-radius: 20px;
     text-decoration: none;
 }
@@ -266,15 +232,11 @@
     }
 
     .index-header .tabs {
-        /* float: left; */
         display: flex;
         width: 50%;
         height: 40px;
         margin-left: 5%;
         justify-content: space-between;
-        /* background-color: pink; */
-        /* box-sizing: border; */
-
     }
 
     .index-header .tabs li:hover {
@@ -308,13 +270,8 @@
         display: inline-block;
         height: 50%;
         margin: 0 auto;
-        /* width: auto; */
-        /* background-color: black; */
     }
 
-    /* .index-header .cv a {
-        width: auto;
-    } */
 
     .index-header .cv a {
         width: 40%;
@@ -327,19 +284,9 @@
     .index-header .cv a img {
         height: 50%;
         margin: 0;
-        /* margin-left: 0px; */
     }
 
     .index-header .cv a div {
         display: none;
     }
-
-
-
-
-
-
-
-
-
 }

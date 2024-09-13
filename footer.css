@@ -26,8 +26,9 @@
 
 .footer .nav .tabs {
     display: flex;
+    flex-wrap: wrap;
     height: 50px;
-    width: 320px;
+    width: 60%;
     /* background-color: purple; */
     margin: 10px auto;
     justify-content: space-between;
@@ -81,18 +82,20 @@
 
     .footer .nav .tabs {
         display: flex;
-        height: 50px;
-        width: 60%;
-        /* background-color: purple; */
+        flex-direction: column;
+        height: auto;
+        width: 50%;
         margin: 10px auto;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
     .footer .nav .tabs a {
         text-decoration: none;
         font-size: 16px;
+        text-align: center;
         font-weight: 500;
+        margin: 5px auto;
     }
 
 
